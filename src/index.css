@@ -536,7 +536,7 @@ font-size: 0.9rem;
   border-radius: 0px !important;
 }
 
-.MuiPaper-elevation1-17, .MuiPaper-elevation1-20{
+.MuiPaper-elevation1-17, .MuiPaper-elevation1-20,.MuiPaper-elevation1-22{
   box-shadow: none !important;
 }
 
@@ -673,7 +673,7 @@ div[class^="MuiGrid"] > div[class^="MuiGrid"] tbody tr td{
   padding-right: 0px !important;
 }
 .dashboard.container div[class^="MuiPaper"] table tr{
-height: 199px;
+  height: 199px;
 }
 .dashboard.container div[class^="MuiGrid"] header{
   background-color: #646777 !important;
@@ -682,9 +682,42 @@ height: 199px;
   color: #fff !important;
 }
 .dashboard.container hr[class^="MuiDivider"]{
-display: none !important; height: 0px !important;
-  }
+  display: none !important; height: 0px !important;
+}
 div[class^="MuiTypography"] tbody tr td{
-border-bottom: 2px solid #e0e0e0 !important;
-padding-top: 13px !important;
+  border-bottom: 2px solid #e0e0e0 !important;
+  padding-top: 13px !important;
+}
+.simple-form .SelectFieldDiv div[class^="MuiSelect"]{
+  min-width: 280px !important;
+}
+.simple-form div[class^="MuiSelect"]{
+  min-width: 190px !important;
+}
+.simple-form div[class^="MuiFormControl"] .button-add{
+  min-width: 200px !important;
+  margin-top: 15px !important;
+  background: #3f51b5 !important;
+  color: #FFFFFF !important;
+}
+.simple-form .button-add svg{
+  fill: #FFFFFF !important;
+}
+div[class^="MuiDialogActions"]{
+  justify-content: flex-start !important;
+  margin: 8px 34px !important;
+}
+.MuiDialog-paperFullWidth-26{
+  max-width: 400px !important;
+}
+.ra-input-attributes div[class^="MuiFormControl"] ul li p{
+  display: none !important;
+}
+.ra-input-attributes label[class^="MuiFormLabel"] > span{
+  font-size: 16px !important;
+  color: rgba(0, 0, 0, 0.54) !important;
+  font-weight:normal !important;
+}
+div[class^="MuiDialogActions"] svg{
+  fill: #FFFFFF !important;
 }

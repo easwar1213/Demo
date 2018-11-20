@@ -5,7 +5,7 @@ import { AssetList, showAsset } from '././AssetSPA/Assets';
 import { DeviceList, showDevice } from '././DevicesSPA/Devices';
 
 import UserIcon from '@material-ui/icons/People';
-import Dashboard from './Dashboard';
+//import Dashboard from './Dashboard';
 
 import authProvider from './authProvider';
 
@@ -26,32 +26,50 @@ import dataProvider from './dataProvider';
 import CustomLoginPage from './CustomLoginPage';
 import CustomLayout from './CustomLayout'
 import './index.css';
+import DashboardIcon from '@material-ui/icons/Dashboard';
+
+import { MapView } from '././MapSPA/MapView';
+import Dashboard from '././DashboardSPA/Dashboard';
 
 
-  class App extends React.Component {
+class App extends React.Component {
 
-    render(){
-      console.log(this.props)
-      return(
+  render() {
+    console.log(this.props)
+    return (
 
-        <Admin 
+      <Admin
         title="Fleet-Admin"
         catchAll={NotFound}
-       // dashboard={Dashboard}
+        dashboard={Dashboard}
         authProvider={authProvider}
         dataProvider={dataProvider}
         loginPage={Login}
         appLayout={CustomLayout}
       >
-  
+
+      <Resource
+          name="getDashboardData"
+          options={{ label: 'Dashboard' }}
+          list={Dashboard}
+          icon={DashboardIcon}
+        />
+
+        <Resource
+          name="getMapViewData"
+          options={{ label: 'Map' }}
+          list={MapView}
+          icon={LocationIcon}
+        />
+
         <Resource
           name="getAssetList"
           options={{ label: 'Assets' }}
           list={AssetList}
           show={showAsset}
-          icon={AssetIcon}          
+          icon={AssetIcon}
         />
-        
+
         <Resource
           name="getDeviceList"
           options={{ label: 'Devices' }}
@@ -59,22 +77,22 @@ import './index.css';
           show={showDevice}
           icon={DeviceIcon}
         />
-  
-  
+
+
         <Resource name="getAssetListForReference" />
         <Resource name="getListOfDataPoints" />
         <Resource name="getAssetAlerts" />
         <Resource name="getAssetMaintenance" />
         <Resource name="getListOfAttributes" />
         <Resource name="getAssetCurrentData" />
-  
+
       </Admin>
-  
 
-      )
-    }
 
+    )
   }
+
+}
 
 export default App;
 

@@ -341,7 +341,7 @@ export const showAsset = (props) => (
                         <TextField label="Time Active" source="timeStamp" />
                         <TextField source="alertPriority" />
                         <TextField source="alertStatus" />
-                        <TextField source="event" />
+                        <TextField source="event" className="LastChildClass"/>
                     </Datagrid>
                     {/* </List>  */}
                 </ReferenceManyField>

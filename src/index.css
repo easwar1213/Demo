@@ -551,6 +551,7 @@ font-size: 0.9rem;
 
 .Datagrid-table-249 td, .datagrid-body td, .Datagrid-table-71 th, .TableResponsive th {
   border: 1px solid #ccc !important;
+  padding: 0px 12px !important;
 }
 
 .TableResponsive thead {
@@ -607,6 +608,7 @@ font-size: 0.9rem;
 
 .Datagrid-headerCell-251 {
   border: 1px solid #ccc !important;
+  padding: 0 12px !important;
 }
 
 .Datagrid-headerCell-73, .MuiTableCell-root-490:last-child {

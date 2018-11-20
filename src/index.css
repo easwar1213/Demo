@@ -14,6 +14,16 @@ body {
   background-size: 100% 100% !important;
 }
 
+.Login-avatar-3 {
+  background-color: transparent !important;
+}
+
+.MuiButton-containedPrimary-84 {
+  background-color: #fbca00 !important;
+  /* color: #646777 !important;
+  font-weight: 600; */
+}
+
 .MuiInput-underline-61:before {
   border-bottom: 1px solid #ccc !important;
 }
@@ -21,10 +31,11 @@ body {
 /* Login Form Style */
 .Login-card-2 {    
   min-width: auto !important;
-  margin-top: 6em !important;  
+  margin-top: 10em !important;  
   /* border: solid #fff; */
   border-radius: 8px !important;  
-  background: rgba(130,130,130,.3) !important;
+  background: rgba(0,0,0,.7) !important;
+  /* background: rgba(94,204,246,.3) !important; */
   padding: 20px 22px !important;
 }
 
@@ -630,4 +641,7 @@ font-size: 0.9rem;
 }
 .EnhancedTable-table-320 {
   border-right: 3px solid #000;
+}
+.MuiInput-root-57 {
+  color: #ccc !important;
 }
